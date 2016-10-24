@@ -1,16 +1,15 @@
 source 'https://rubygems.org'
 
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
-gem 'pg'
-gem 'puma', '~> 3.0'
-gem 'jsonapi_suite', '~> 0.1'
+gem 'sqlite3'
 gem 'kaminari', '~> 0.17'
-gem 'active_model_serializers', :ref => '2145540'
+gem 'jsonapi-rails', '0.1.1.beta1'
 
 group :development, :test do
   gem 'pry'
   gem 'pry-byebug', platform: :mri
   gem 'rspec-rails', '~> 3.5'
+  gem 'jsonapi_spec_helpers'
 end
 
 group :test do

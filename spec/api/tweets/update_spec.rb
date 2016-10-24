@@ -9,7 +9,7 @@ RSpec.describe 'tweets#update', type: :request do
       data: {
         id: tweet.id,
         type: 'tweets',
-        attributes: { content: 'updated' },
+        attributes: { content: 'updated' }
       }
     }
   end
